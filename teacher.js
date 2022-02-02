@@ -5,11 +5,11 @@ class Teacher {
         this.age = age;
         this.gender = gender;
         this.degree = degree;
-        this.students = [];
+        this.students = []; 
     }
 
     toString(){
-        let myClass = "Nome: " + this.name + "\n"
+        let myClass = "Insegnante:\nNome: " + this.name + "\n"
                                + "Cognome: " + this.surname + "\n"
                                + "Età: " + this.age + "\n"
                                + "Sesso: " + this.gender + "\n"
@@ -40,6 +40,14 @@ class Teacher {
         }
     }
 
+    generateCode() {
+        let now = new Date();
+        let actualYear = now.getFullYear();
+        let birthYear = actualYear - this.age;
+        let code = this.name[0] + this.name[1] + this.surname[0] + this.surname[1] + birthYear;
+        return code;
+    }
+
     bestStudent(){
         let bestStudent = student1.generateCode();
         let bestMean = student1.calculateMean();
@@ -49,6 +57,6 @@ class Teacher {
                 bestStudent = stud.generateCode()
             }
         }
-        return bestStudent;
+        return "Miglior studente: " + bestStudent;
     }
 }

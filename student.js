@@ -5,7 +5,7 @@ class Student{
         this.age = age;
         this.gender = gender;
         this.grades = [];
-    }
+    } 
 
     addGrade(grade){
         if (grade >= 0 && grade <= 10) {
@@ -37,7 +37,7 @@ class Student{
             mean = "n/c";
         }
 
-        let studentDescription = "Nome: " + this.name + "\n"
+        let studentDescription = "Studente:\nNome: " + this.name + "\n"
                                + "Cognome: " + this.surname + "\n"
                                + "Età: " + this.age + "\n"
                                + "Media: " + mean;
