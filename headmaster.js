@@ -1,9 +1,6 @@
-class Headmaster {
+class Headmaster extends Person{
     constructor(name, surname, age, gender, school){
-        this.name = name;
-        this.surname = surname;
-        this.age = age;
-        this.gender = gender;
+        super(name, surname, age, gender);
         this.school = school;
         this.teachers = [];
         }
@@ -44,5 +41,10 @@ class Headmaster {
             }    
         }
         return "Miglior insegnante: " + bestTeacher;
+    }
+
+    generateCode() {
+        let code = super.generateCode();
+        return code;
     }
 }

@@ -1,9 +1,6 @@
-class Teacher {
+class Teacher extends Person{
     constructor(name, surname, age, gender, degree){
-        this.name = name;
-        this.surname = surname;
-        this.age = age;
-        this.gender = gender;
+        super(name, surname, age, gender);
         this.degree = degree;
         this.students = []; 
     }

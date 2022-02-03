@@ -5,9 +5,9 @@ let student4 = new Student("Louie", "Duck", 11, "m");       //LoDu2011
 let student5 = new Student("Dewey", "Duck", 11, "m");       //DeDu2011
 let student6 = new Student("Della", "Duck", 32, "f");       //DeDu1990
 let teacher1 = new Teacher("Scrooge", "Mc Duck", 80, "m", "terza media");           //Studenti: Donald e Louie
-let teacher2 = new Teacher("Eikichi", "Onizuka", 22, "m", "diploma di maturità");   //Studenti: Daisy e Della
-let teacher3 = new Teacher("Andrea", "Asioli", 40, "m", "laureona");                //Studenti: Huey
-let teacher4 = new Teacher("Baldi", "Baldimore", 45, "m", "terza media");           //Studenti: Dewey
+let teacher2 = new Teacher("Eikichi", "Onizuka", 22, "m", "terza media");           //Studenti: Daisy e Della
+let teacher3 = new Teacher("Andrea", "Asioli", 40, "m", "quinta superiore");        //Studenti: Huey
+let teacher4 = new Teacher("Baldi", "Baldimore", 45, "m", "quinta elementare");     //Studenti: Dewey
 let headmaster = new Headmaster("Albus", "Dumbledore", 150, "m", "Hogwarts"); 
 
 
@@ -37,6 +37,7 @@ console.log(teacher3.toString());
 console.log(teacher4.toString());
 //console.log(teacher1.generateCode());
 console.log(headmaster.bestTeacher());
+console.log(headmaster.generateCode());
 
 
 //console.log(student1.calculateMean());
